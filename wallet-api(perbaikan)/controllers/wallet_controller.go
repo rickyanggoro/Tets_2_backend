@@ -9,6 +9,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v4"
+	"gorm.io/gorm"
 )
 
 var jwtKey = []byte("SECRET_KEY")
@@ -28,10 +29,18 @@ func Register(c *gin.Context) {
 	}
 
 	var exist models.User
-	if err := config.DB.Where("phone = ?", input.Phone).First(&exist).Error; err == nil {
+	err := config.DB.Where("phone = ?", input.Phone).First(&exist).Error
+
+	if err == nil {
+		// Data user ditemukan, artinya nomor sudah terdaftar
 		c.JSON(http.StatusBadRequest, gin.H{"message": "Phone Number already registered"})
 		return
+	} else if err != gorm.ErrRecordNotFound {
+		// Error lain yang bukan "record not found" -> kemungkinan masalah database
+		c.JSON(http.StatusInternalServerError, gin.H{"message": "Database error"})
+		return
 	}
+	// Kalau sampai sini artinya user dengan nomor telepon belum ada, lanjut buat baru
 
 	user := models.User{
 		FirstName: input.FirstName,

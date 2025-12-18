@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2025 at 06:29 PM
+-- Generation Time: Dec 18, 2025 at 07:37 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -53,6 +53,7 @@ INSERT INTO `transactions` (`transaction_id`, `user_id`, `type`, `amount`, `bala
 ('3a06a8c1-97d9-4391-aa2a-576a8c8ebed5', 'c44c4b47-cb79-4263-974f-14f9f31229e3', 'DEBIT', 30000, 120000, 90000, 'Transfer teman', '2025-12-19 00:15:51.861'),
 ('3ae9481f-e5eb-416c-b145-e486bfca5c4d', '267d9b33-e36b-412d-b5e6-611d3aa93599', 'CREDIT', 30000, 0, 30000, 'Transfer teman', '2025-12-19 00:15:51.862'),
 ('3f0649d0-eda1-402d-80e6-c02c626f4672', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'DEBIT', 10000, 20000, 10000, 'Bayar pulsa', '2025-12-18 17:56:30.725'),
+('5083c36e-4059-4ba8-9891-bc41889ef598', '86021d3c-fb28-4814-bf4c-5852b8501c19', 'DEBIT', 25000, 50000, 25000, 'Belanja harian', '2025-12-19 01:27:02.201'),
 ('5234ece6-9fec-4db2-8e6e-036cbf4debd4', 'adbd145d-7be9-49f3-b9a8-5fd4c57d7b6c', 'CREDIT', 10000, 60000, 70000, 'Top Up', '2025-12-18 17:26:08.545'),
 ('580723b8-6464-4cc7-b846-d12d4f099442', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'CREDIT', 5000, 80000, 85000, 'Transfer ke teman', '2025-12-18 18:27:01.391'),
 ('5a3d8e24-964a-44d8-a851-b7341c75c70d', '267d9b33-e36b-412d-b5e6-611d3aa93599', 'DEBIT', 5000, 15000, 10000, 'Transfer ke teman', '2025-12-18 18:26:56.153'),
@@ -64,17 +65,21 @@ INSERT INTO `transactions` (`transaction_id`, `user_id`, `type`, `amount`, `bala
 ('716b593e-8b46-4d35-89a9-acaebe02597c', '267d9b33-e36b-412d-b5e6-611d3aa93599', 'DEBIT', 5000, 10000, 5000, 'Transfer ke teman', '2025-12-18 18:27:01.386'),
 ('7329794e-744e-4f9c-86ea-8d5aa14b9008', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'CREDIT', 5000, 90000, 95000, 'Transfer ke teman', '2025-12-18 19:03:32.689'),
 ('76831451-b8d3-424b-adcc-496dc356b0e8', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'CREDIT', 5000, 105000, 110000, 'Transfer ke teman', '2025-12-18 19:03:47.773'),
+('7d8318a6-aa90-4607-89cc-15cb9136dd65', 'ce41c7b9-42a0-4102-aac9-85f0ec669caa', 'CREDIT', 50000, 0, 50000, 'transfer ibu', '2025-12-19 01:25:49.810'),
 ('80da347d-76a8-4c8f-8605-756a83cfb768', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'CREDIT', 5000, 50000, 55000, 'Top Up', '2025-12-18 18:07:26.143'),
 ('8f6338d5-3126-4c5d-ad3f-f536889f3fb7', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'CREDIT', 5000, 70000, 75000, 'Transfer ke teman', '2025-12-18 18:26:51.135'),
 ('91130922-d322-4630-b943-1ef4ba19c390', '267d9b33-e36b-412d-b5e6-611d3aa93599', 'DEBIT', 5000, 25000, 20000, 'Transfer ke teman', '2025-12-18 18:26:46.094'),
 ('94bd21d7-6133-4cf1-a0ca-e2fa7212b1a0', '267d9b33-e36b-412d-b5e6-611d3aa93599', 'DEBIT', 5000, 30000, 25000, 'Transfer ke teman', '2025-12-18 18:26:41.068'),
 ('98a469ed-a875-407f-966d-79ab40ff94a6', '669bd3e9-dabb-4347-9312-c0e71d3f25c5', 'CREDIT', 60000, 50000, 110000, 'Top Up', '2025-12-18 17:22:40.625'),
 ('9abbd34f-ec36-43f3-857a-e78747025598', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'CREDIT', 5000, 110000, 115000, 'Transfer ke teman', '2025-12-19 00:04:21.523'),
+('9bf47c76-ceaa-455d-b056-f960176ec490', '86021d3c-fb28-4814-bf4c-5852b8501c19', 'DEBIT', 50000, 100000, 50000, 'transfer ibu', '2025-12-19 01:25:49.805'),
+('9e38703a-632a-43cb-b3c7-6fc8ecb815a7', '86021d3c-fb28-4814-bf4c-5852b8501c19', 'CREDIT', 50000, 100000, 150000, 'Top Up', '2025-12-19 01:25:10.355'),
 ('9f2c0095-d532-4d37-9848-e17cd08c2cdc', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'CREDIT', 5000, 60000, 65000, 'Transfer ke teman', '2025-12-18 18:26:41.073'),
 ('bcb9544d-e554-4ed7-8bff-e77641d8bf09', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'CREDIT', 5000, 55000, 60000, 'Transfer ke teman', '2025-12-18 18:26:36.046'),
 ('bced1bf0-933b-4f3a-81c5-f49a731f8e15', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'DEBIT', 5000, 50000, 45000, 'Transfer ke adik', '2025-12-18 18:08:24.074'),
 ('c4e4957b-ec1e-4324-b455-1afeba6af9fb', 'a3d55143-7a87-4e10-a126-befdbd171bfe', 'CREDIT', 50000, 0, 50000, 'Top Up', '2025-12-19 00:03:45.969'),
 ('cd52d9ef-5380-4056-9350-520f45d8e05f', 'c2f97c18-8cd3-4053-8bd8-e97046b5cc6d', 'CREDIT', 50000, 0, 50000, 'Kirim uang', '2025-12-18 23:41:15.693'),
+('d0ee193d-e226-41b8-b76f-291a07dae8a3', '86021d3c-fb28-4814-bf4c-5852b8501c19', 'CREDIT', 100000, 0, 100000, 'Top Up', '2025-12-19 01:23:42.713'),
 ('d5d8f284-50d0-40dd-977a-472ec15e4555', '267d9b33-e36b-412d-b5e6-611d3aa93599', 'DEBIT', 5000, 20000, 15000, 'Transfer ke teman', '2025-12-18 19:03:32.686'),
 ('dc04fbc1-e6a6-4776-b120-c3b89692ff1a', 'a3d55143-7a87-4e10-a126-befdbd171bfe', 'CREDIT', 50000, 100000, 150000, 'Top Up', '2025-12-18 23:40:44.238'),
 ('de940e5f-8203-4d72-a4c6-0eb41e1c79b3', '267d9b33-e36b-412d-b5e6-611d3aa93599', 'DEBIT', 5000, 10000, 5000, 'Transfer ke teman', '2025-12-18 19:03:42.738'),
@@ -110,6 +115,7 @@ CREATE TABLE `transfer_queues` (
 INSERT INTO `transfer_queues` (`transfer_queue_id`, `from_user_id`, `to_user_id`, `amount`, `remarks`, `status`, `created_at`, `processed_at`) VALUES
 ('4d43df59-bf04-4479-9908-ff194481629b', 'a3d55143-7a87-4e10-a126-befdbd171bfe', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 50000, 'Transfer ke teman', 'FAILED', '2025-12-19 00:03:05.604', '2025-12-19 00:03:06.472'),
 ('8f07c78b-62b6-4876-a483-fc2a99cd9f1c', 'a3d55143-7a87-4e10-a126-befdbd171bfe', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 50000, 'Transfer ke teman', 'FAILED', '2025-12-19 00:01:11.690', '2025-12-19 00:01:16.432'),
+('bbf8bff7-829e-4a79-937d-3f0d84043920', '86021d3c-fb28-4814-bf4c-5852b8501c19', 'ce41c7b9-42a0-4102-aac9-85f0ec669caa', 50000, 'transfer ibu', 'COMPLETED', '2025-12-19 01:25:45.770', '2025-12-19 01:25:49.801'),
 ('d64b68a2-5292-4c66-857b-13157d1c3945', 'a3d55143-7a87-4e10-a126-befdbd171bfe', 'c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 5000, 'Transfer ke teman', 'COMPLETED', '2025-12-19 00:04:19.472', '2025-12-19 00:04:21.514'),
 ('f28826c3-87e0-4bf0-96be-026b74a52ed5', 'c44c4b47-cb79-4263-974f-14f9f31229e3', '267d9b33-e36b-412d-b5e6-611d3aa93599', 30000, 'Transfer teman', 'COMPLETED', '2025-12-19 00:15:50.270', '2025-12-19 00:15:51.858');
 
@@ -121,11 +127,11 @@ INSERT INTO `transfer_queues` (`transfer_queue_id`, `from_user_id`, `to_user_id`
 
 CREATE TABLE `users` (
   `user_id` varchar(36) NOT NULL,
-  `first_name` varchar(100) DEFAULT NULL,
-  `last_name` varchar(100) DEFAULT NULL,
-  `phone` varchar(20) DEFAULT NULL,
-  `address` text DEFAULT NULL,
-  `pin` varchar(10) DEFAULT NULL,
+  `first_name` longtext DEFAULT NULL,
+  `last_name` longtext DEFAULT NULL,
+  `phone` varchar(191) DEFAULT NULL,
+  `address` longtext DEFAULT NULL,
+  `pin` longtext DEFAULT NULL,
   `balance` bigint(20) DEFAULT NULL,
   `created_at` datetime(3) DEFAULT NULL,
   `updated_at` datetime(3) DEFAULT NULL
@@ -136,11 +142,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `phone`, `address`, `pin`, `balance`, `created_at`, `updated_at`) VALUES
-('267d9b33-e36b-412d-b5e6-611d3aa93599', 'Prayoga', 'Wiranata', '08123456789', 'Jl. Susilo no. 10', '1234', 30000, '2025-12-18 18:21:37.212', '2025-12-19 00:15:51.855'),
-('a3d55143-7a87-4e10-a126-befdbd171bfe', 'Budi', 'Santoso', '081234568767', 'Jakarta Selatan', '123456', 25000, '2025-12-18 23:33:22.397', '2025-12-19 00:08:39.724'),
-('adbd145d-7be9-49f3-b9a8-5fd4c57d7b6c', 'Ricky', 'Anggoro', '089507506699', '', '1234', 10000, '2025-12-18 17:24:20.507', '2025-12-18 17:51:52.066'),
+('267d9b33-e36b-412d-b5e6-611d3aa93599', 'nanda', 'wira', '08123456789', 'Jl. Baru No.99', '1234', 30000, '2025-12-18 18:21:37.212', '2025-12-19 01:34:44.074'),
+('86021d3c-fb28-4814-bf4c-5852b8501c19', 'Budi', 'Santoso', '082345678910', 'Jl. Contoh No.1', '1234', 25000, '2025-12-19 01:22:05.214', '2025-12-19 01:27:02.195'),
 ('c44c4b47-cb79-4263-974f-14f9f31229e3', 'Najwa', 'Kafka', '082345678901', 'Palembang', '654321', 90000, '2025-12-19 00:10:41.400', '2025-12-19 00:19:36.248'),
-('c9e1c30e-5fa4-4b27-902a-9eafd8ea5971', 'najwa', 'kafka', '089623200220', 'Jl. Merdeka No. 10', '1234', 115000, '2025-12-18 17:53:46.198', '2025-12-19 00:04:21.510');
+('ce41c7b9-42a0-4102-aac9-85f0ec669caa', 'AYU', 'HANDAYANI', '082345678905', 'Palembang', '123456', 50000, '2025-12-19 01:18:24.812', '2025-12-19 01:25:49.798');
 
 --
 -- Indexes for dumped tables
@@ -163,7 +168,7 @@ ALTER TABLE `transfer_queues`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`),
-  ADD UNIQUE KEY `idx_users_phone` (`phone`);
+  ADD UNIQUE KEY `uni_users_phone` (`phone`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

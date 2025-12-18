@@ -8,10 +8,10 @@ import (
 )
 
 type User struct {
-	UserID    string
+	UserID    string `gorm:"type:varchar(36);primaryKey;column:user_id"`
 	FirstName string
 	LastName  string
-	Phone     string
+	Phone     string `gorm:"unique"`
 	PIN       string
 	Address   string
 	Balance   int64

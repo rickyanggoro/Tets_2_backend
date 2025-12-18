@@ -8,14 +8,14 @@ import (
 )
 
 type TransferQueue struct {
-	TransferQueueID string
-	FromUserID      string
-	ToUserID        string
-	Amount          int64
-	Remarks         string
-	Status          string
-	CreatedAt       time.Time
-	ProcessedAt     *time.Time
+	TransferQueueID string     `gorm:"type:varchar(36);primaryKey;column:transfer_queue_id"`
+	FromUserID      string     `gorm:"type:varchar(36);column:from_user_id"`
+	ToUserID        string     `gorm:"type:varchar(36);column:to_user_id"`
+	Amount          int64      `gorm:"type:bigint"`
+	Remarks         string     `gorm:"type:varchar(255)"`
+	Status          string     `gorm:"type:varchar(20)"`
+	CreatedAt       time.Time  `gorm:"column:created_at"`
+	ProcessedAt     *time.Time `gorm:"column:processed_at"`
 }
 
 func (t *TransferQueue) BeforeCreate(tx *gorm.DB) (err error) {
